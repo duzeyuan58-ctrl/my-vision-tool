@@ -7,7 +7,7 @@ export async function editImage(
   prompt: string, 
   aspectRatio: string = "1:1"
 ): Promise<string> {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: "AIzaSyDKvsz8eJ8L7wdFoRGxqyGX4dZ4KD4o2fo" });
   
   try {
     const response = await ai.models.generateContent({
